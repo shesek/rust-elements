@@ -39,10 +39,12 @@ pub mod address;
 pub mod blech32;
 mod block;
 pub mod confidential;
+mod fast_merkle_root;
 mod transaction;
 
 // export everything at the top level so it can be used as `elements::Transaction` etc.
 pub use address::{Address, AddressParams, AddressError};
 pub use transaction::{OutPoint, PeginData, PegoutData, TxIn, TxOut, TxInWitness, TxOutWitness, Transaction, AssetIssuance};
 pub use block::{BlockHeader, Block, Proof};
+pub use fast_merkle_root::fast_merkle_root;
 
