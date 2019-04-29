@@ -39,6 +39,7 @@ pub mod address;
 pub mod blech32;
 mod block;
 pub mod confidential;
+pub mod issuance;
 mod fast_merkle_root;
 mod transaction;
 
@@ -47,4 +48,5 @@ pub use address::{Address, AddressParams, AddressError};
 pub use transaction::{OutPoint, PeginData, PegoutData, TxIn, TxOut, TxInWitness, TxOutWitness, Transaction, AssetIssuance};
 pub use block::{BlockHeader, Block, Proof};
 pub use fast_merkle_root::fast_merkle_root;
+pub use issuance::AssetId;
 
