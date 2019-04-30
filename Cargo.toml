@@ -18,11 +18,12 @@ documentation = "https://docs.rs/elements/"
 
 [dependencies]
 bech32 = "0.6"
-bitcoin_hashes = "0.3.0"
+bitcoin_hashes = { git = "https://github.com/stevenroose/bitcoin_hashes", rev = "bd75e6cfc90efd2c9e3999adf0d92e1a41866cbe" }
 secp256k1 = "0.12.0"
 
 [dependencies.bitcoin]
-version = "0.18.0"
+git = "https://github.com/shesek/rust-bitcoin"
+rev = "edge"
 
 [dependencies.serde]
 version = "1.0"
