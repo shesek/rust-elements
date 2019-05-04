@@ -18,7 +18,7 @@ documentation = "https://docs.rs/elements/"
 
 [dependencies]
 bech32 = "0.6"
-bitcoin_hashes = { git = "https://github.com/stevenroose/bitcoin_hashes", rev = "bd75e6cfc90efd2c9e3999adf0d92e1a41866cbe" }
+bitcoin_hashes = { git = "https://github.com/stevenroose/bitcoin_hashes", rev = "29053f647eb9c587cd87b34be38b0050ff26a7af" }
 secp256k1 = "0.12.0"
 
 [dependencies.bitcoin]

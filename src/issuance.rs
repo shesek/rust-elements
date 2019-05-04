@@ -84,8 +84,11 @@ impl AssetId {
 }
 
 impl hex::FromHex for AssetId {
-    fn from_hex(s: &str) -> Result<Self, Error> {
-        sha256::Midstate::from_hex(s).map(AssetId)
+    fn from_byte_iter<I>(iter: I) -> Result<Self, Error>
+    where
+        I: Iterator<Item = Result<u8, Error>> + ExactSizeIterator + DoubleEndedIterator,
+    {
+        sha256::Midstate::from_byte_iter(iter).map(AssetId)
     }
 }
 
